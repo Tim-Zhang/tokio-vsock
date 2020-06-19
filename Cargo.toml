@@ -15,8 +15,8 @@ iovec = "0.1.4"
 libc = "0.2.71"
 mio = "0.6.20"
 nix = "0.17.0"
-tokio = { version = "0.2", features = ["io-driver", "stream", ] }
-vsock = { git = "https://github.com/fsyncd/vsock-rs", branch = "master" }
+tokio = { version = "0.2", features = ["io-driver", "stream", "macros", "rt-threaded", ] }
+vsock = { git = "https://github.com/Tim-Zhang/vsock-rs", branch = "master" }
 
 [dev-dependencies]
 hyper = "0.12.35"
